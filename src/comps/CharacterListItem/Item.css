@@ -1,0 +1,74 @@
+.Item {
+    display : inline-grid;
+    justify-content : space-between;
+    padding : 5px;
+}
+.Item-image {
+    border : 1px solid #ccc;
+    margin-right : 10px;
+    float : left;
+    max-width:50%;
+    width:50%;
+}
+.Item-title {
+    font-weight : bold;
+    margin-bottom : 0.8em;
+}
+
+.Item-description {
+    margin-bottom : 0.8em;
+}
+
+.Item-url {
+    margin-bottom : 0.8em;
+    word-break: break-word;
+    float:right;
+}
+
+.Item-left {
+    flex : 1;
+    flex-direction : column;
+    justify-content : space-between;
+}
+.Item-right {
+    display : 1;
+    flex-direction : column;
+    justify-content : space-between;
+}
+
+.grid {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    border: solid 1px;
+}
+
+.Item-detail {
+    display : inline-block;
+    justify-content : space-between;
+    padding : 5px;
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.checkbox-list {
+    display: inline-list-item;
+}
+
+.button-link {
+    background:none!important;
+    border:none;
+    padding:0!important;
+
+    /*optional*/
+    font-family:arial,sans-serif; /*input has OS specific font-family*/
+    color:#069;
+    text-decoration:underline;
+    cursor:pointer;
+}
+
